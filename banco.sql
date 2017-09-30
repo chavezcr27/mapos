@@ -481,6 +481,32 @@ CREATE  TABLE IF NOT EXISTS `emitente` (
   PRIMARY KEY (`id`) )
 ENGINE = InnoDB;
 
+-- -----------------------------------------------------
+-- Table `proveedores`
+-- -----------------------------------------------------
+
+CREATE TABLE `proveedores` (
+	`idProveedores` INT(11) NOT NULL AUTO_INCREMENT,
+	`nombreP` VARCHAR(40) NULL DEFAULT NULL COLLATE 'utf8_spanish_ci',
+	`rucP` VARCHAR(20) NULL DEFAULT NULL COLLATE 'utf8_spanish_ci',
+	`contactoP` VARCHAR(40) NULL DEFAULT NULL COLLATE 'utf8_spanish_ci',
+	`tel1P` VARCHAR(20) NULL DEFAULT NULL COLLATE 'utf8_spanish_ci',
+	`celular` VARCHAR(20) NULL DEFAULT NULL COLLATE 'utf8_spanish_ci',
+	`email1P` VARCHAR(30) NULL DEFAULT NULL COLLATE 'utf8_spanish_ci',
+	`direccionP` VARCHAR(250) NULL DEFAULT NULL COLLATE 'utf8_spanish_ci',
+	`barrioP` VARCHAR(40) NULL DEFAULT NULL COLLATE 'utf8_spanish_ci',
+	`ciudadP` VARCHAR(40) NULL DEFAULT NULL COLLATE 'utf8_spanish_ci',
+	`cpP` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_spanish_ci',
+	`paisP` VARCHAR(40) NULL DEFAULT NULL COLLATE 'utf8_spanish_ci',
+	`notasP` VARCHAR(500) NULL DEFAULT NULL COLLATE 'utf8_spanish_ci',
+	`fecharegistro` DATE NULL DEFAULT NULL,
+	PRIMARY KEY (`idProveedores`)
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=35
+;
+
 
 
 
